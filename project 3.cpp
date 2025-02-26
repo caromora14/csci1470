@@ -7,9 +7,9 @@
 // Instructor: Dr. Jonatan Reyes
 //
 // Program Name: Project 3 Number generator
-// Program Description: Brief description of program
+// Program Description: Even and Odd number random numbers
 //
-////////////////////////////////////////////////////////////////#include <iostream>
+////////////////////////////////////////////////////////////////
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -18,16 +18,45 @@ using namespace std;
 
 int main(){
   
-int randnum, randrange, randrange2, erandrange;
- srand(time(0));
- randnum=rand();
- randrange=rand()%100+1;
- erandrange=randrange%2;
+int randnum, randrange, randrange2,randnum2, randnum3, randrange3, randnum4, randrange4, randrange5, randnum5;
 
+  srand(time(0));
+  randnum=rand();
+  randrange=rand()%100+1;
+  if(randrange% 2 == 0)
+        printf("%d is even.", randrange);
+    else
+        printf("%d is odd.", randrange);
  
- cout<<"Random number 1: "<<randrange<<endl;
- cout<<"If 0 then answer is even, if 1 then answer is odd: "<<erandrange<<endl;
+  randnum2=rand();
+  randrange2=rand()%100+1;
+  if(randrange2% 2 == 0)
+        printf("%d is even.", randrange2);
+    else
+        printf("%d is odd.", randrange2);
 
+  randnum3=rand();
+  randrange3=rand()%100+1;
+  if(randrange3% 2 == 0)
+        printf("%d is even.", randrange3);
+    else
+        printf("%d is odd.", randrange3);
+
+  randnum4=rand();
+  randrange4=rand()%100+1;
+  if(randrange4% 2 == 0)
+        printf("%d is even.", randrange4);
+    else
+        printf("%d is odd.", randrange4);
+
+  randnum5=rand();
+  randrange5=rand()%100+1;
+  if(randrange5% 2 == 0)
+        printf("%d is even.", randrange5);
+    else
+        printf("%d is odd.", randrange5);
+ 
+ 
 
   return 0;
 }
